@@ -23,4 +23,24 @@ def describe_shape(shape):
 # Your code below
 
 class Triangle(Shape):
-    pass
+    def __init__(self,length,width,height):
+        self.length = length
+        self.width = width
+        self.height =height
+
+    def get_perimeter(self):
+        perimeter= self.length + self.width + self.height
+        return perimeter
+
+    def get_area(self):
+        s = (self.length +self.width + self.height)/2
+        area = math.sqrt[s(s-self.length)(s-self.width)(s-self.height)]
+        return area
+
+    def get_name(self):
+        return Triangle
+        
+
+             
+    
+    
