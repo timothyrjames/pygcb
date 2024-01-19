@@ -21,8 +21,8 @@ b.data.append(1) # does b.data contain [1]?
 a.print_it() # prints a: [0, 1]
 b.print_it() # prints b: [0, 1]
 
-
 print(MyFirstClass.data)
+
 
 class MySecondClass(object):
     my_number = 0
@@ -39,8 +39,6 @@ class MySecondClass(object):
 
     def print_for_class():
         print(MySecondClass.my_number)
-
-
 
 
 c = MySecondClass('c')
