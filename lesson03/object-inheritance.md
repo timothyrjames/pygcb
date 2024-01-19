@@ -2,11 +2,11 @@
 
 ## Introduction
 
-This tutorial will discuss inheritance in Python objects. Inheritance allows our objects to be treated as something basic and common, while implementing more specific behaviors. It also allows us to define some common behaviors and reuse them in other objects. Let's go!
+This tutorial will discuss inheritance in Python objects. Inheritance allows our objects to be treated as something basic and common, while implementing more specific behaviors. It also allows us to define some common behaviors and reuse them in other objecLet's go!
 
 ## Defining a Parent Class
 
-If we wanted to build a code library that was full of shapes, we could do it by definining each shape indvidually. Each one could have its own behavior, its own methods, and its own properties. That might work out fine as long as we were using shapes independently, but we'd run into problems as soon as we want to start working with each one of the shapes generically. By using inheritance, we can define some common methods that all of our shapes can perform, 
+If we wanted to build a code library that was full of shapes, we could do it by definining each shape indvidually. Each one could have its own behavior, its own methods, and its own properties. That might work out fine as long as we were using shapes independently, but we'd run into problems as soon as we want to start working with each one of the shapes generically. By using inheritance, we can define some common methods that all of our shapes can perform.
 
 ```py
 class Shape(object):
@@ -25,7 +25,7 @@ Generally, it's good to make sure that your parent classes don't know anything a
 
 ## Defining a Child Class
 
-Now that we have the `Shape` class, we can use it to define our behavior even further. We've already used the `Shape` class to identify that we'll have a few methods, but our Rectangle can implement specific behavior for these.
+Now that we have the `Shape` class, we can use it to define our behavior even further. We've already used the `Shape` class to identify that we'll have a few methods, but our Rectangle can implement specific behavior for these. To create a subclass of another class in Python, you just replace `(object)` with the name of your parent class. This indicates that your class is derived from, or inherits from, the specified parent class.
 
 ```py
 class Rectangle(Shape):
